@@ -1,0 +1,135 @@
+.portfolio {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #CB997E;
+  font-family: 'Jost', sans-serif;
+  padding-top: 100px;
+}
+
+.portfolio-text-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.portfolio-subtitle {
+  color: white;
+  font-size: 100px;
+  line-height: 100px;
+  text-shadow: 2px 2px #DDBEA9;
+  margin-bottom: 0px;
+}
+
+.portfolio-text {
+  color: #FFE8D6;
+}
+
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  width: 90%;
+  margin: 0 auto;  
+  margin-top: 50px;
+}
+
+.thumbnail-images {
+  z-index: 90;
+  width: 350px;
+  height: 350px;
+  opacity: .8;
+  background-size: contain;
+  border-radius: 80%;
+  border: 1px solid white;
+  margin: 20px 40px 20px 40px;
+}
+
+.thumbnail-images:hover {
+  opacity: 1;
+}
+
+.thumbnail-text-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  align-content: center;
+  height: 325px;
+}
+
+.thumbnail-text {
+  z-index: 100;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 800;
+  font-size: 25px;
+  text-shadow: 2px 2px #DDBEA9;
+}
+
+.portfolio-link {
+  text-decoration: none;
+  color: white;
+}
+
+/* MOBILE BREAKPOINT */
+
+@media only screen and (max-width: 600px) {
+
+  .portfolio {
+    padding-top: 50px;
+  }
+  
+  .portfolio-text-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .thumbnail-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    width: 100%;
+    margin: 0 auto;  
+    margin-top: 50px;
+  }
+
+  .portfolio-subtitle {
+    font-size: 50px;
+  }
+  
+  .thumbnail-images {
+    width: 300px;
+    height: 300px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .thumbnail-text-container {
+    height: 300px;
+  }
+  
+  .thumbnail-text {
+    z-index: 100;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 800;
+    font-size: 25px;
+    text-shadow: 2px 2px #DDBEA9;
+  }
+  
+  .portfolio-link {
+    width: 300px;
+    text-decoration: none;
+    color: white;
+  }
+
+}
