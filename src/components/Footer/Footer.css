@@ -1,28 +1,19 @@
 .footer {
   display: flex;
-  align-items: center;
+  margin-top: 55px;
+  justify-content: center;
+  align-items: flex-end;
   width: 100%;
-  background-color: #DDBEA9;
+  height: 10vh;
   bottom: 0;
-  height: 50px;
 }
 
 .footer-icon-container {
-  margin-right: 50px;
   display: flex;
-  align-items: center;
 }
 
 .footer-icon {
-  width: 30px;
-  margin-left: 10px;
-}
-
-@media only screen and (max-width: 600px) {
-
-  .footer {
-    display: flex;
-    justify-content: center;
-  }
-
+  width: 35px;
+  margin: 5px auto;
+  padding: 5px;
 }

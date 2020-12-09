@@ -1,6 +1,10 @@
 .app {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("./assets/woodangle.jpg");
+}
+
+.main-container {
+  min-height: 80vh;
 }
 
 a {

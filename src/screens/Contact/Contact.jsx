@@ -3,6 +3,12 @@ import Footer from "../../components/Footer/Footer";
 import NavBar from '../../components/NavBar/NavBar';
 import './Contact.css'
 
-export default class Contact extends React.Component {
-  
+function Contact(props) {
+  return (
+    <div >
+      
+    </div>
+  );
 }
+
+export default Contact;
