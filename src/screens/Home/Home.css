@@ -1,134 +1,27 @@
-#header {
-  height: 100vh;
-  min-height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #CB997E;
-  font-family: 'Jost', sans-serif;
-}
-
-.homepage-title {
-  display: flex;
+.home-container {
+  text-align: center;
   margin: 0 auto;
-  align-items: flex-end;
-}
-
-#homepage-title {
+  padding: 10px;
+  margin-bottom: 60px;
+  max-width: 50%;
+  min-height: 60%;
+  color: rgba(61, 38, 8, 0.885);
+  font-size: 170%;
   display: flex;
-  align-items: flex-end;
-  width: 550px;
-  margin-bottom: 0;
-  font-size: 110px;
+  flex-direction: column;
+  text-shadow: 2px, 2px, 5px rgba(61, 38, 8, 0.885);
   color: white;
-  line-height: 100px;
-  text-shadow: 2px 2px #DDBEA9;
 }
 
-#homepage-subtitle {
-  display: flex;
-  align-items: flex-end;
-  align-content: flex-end;
-  width: 200px;  
-  margin-bottom: 0;
-  font-size: 35px;
-  color: #FFE8D6;
-}
-
-.header-carousel-container {
-  margin: 0px;
+.home-nav-container {
+  background-image: url("../../assets/ButtonMedium.png");
+  width: 128px;
   margin: 0 auto;
+  height: 35px;
 }
 
-.page-break{
-  height: 1px;
-  width: 50%;
-  margin-top: -40px;
-  border: solid 1px whitesmoke;
-}
-
-.explore-container {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #F0EFEB;
-}
-
-.explore-button {
-  width: 75px;
-  height: 75px;
-  margin-bottom: 40px;
-  background: none;
-  border-radius: 50%;
-  border: none;
-  outline: none;
-  
-}
-
-.explore-button:hover {
-  cursor: pointer;
-  background-color: #DDBEA9;
-}
-
-#explore-arrow {
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
-  width: 50px;
-}
-
-/* MOBILE BREAKPOINT */
-
-@media only screen and (max-width: 600px) {
-
-  #header {
-    height: 100vh;
-    min-height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .homepage-title {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 100%;
-    align-items: center;
-  }
-  
-  #homepage-title {
-    display: flex;
-    align-items: flex-end;
-    width: 200px;
-    margin-bottom: 0;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 50px;
-    color: white;
-    line-height: 60px;
-    text-shadow: 2px 2px #DDBEA9;
-  }
-  
-  #homepage-subtitle {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    width: 200px;  
-    text-align: center;
-    margin-bottom: 0;
-    font-size: 25px;
-    color: #FFE8D6;
-  }
-  
-  .header-carousel-container {
-    display: none;
-  }
-  
-  .page-break{
-    width: 60%;
-    margin-top: 40px;
-  }
+.enter {
+  font-size: 26px;
+  color: gold;
+  margin: 0;
 }
