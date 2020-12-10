@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import "./Home.css";
-function Home(props) {
+function Home() {
   return (
     <div className="home-container">
       <div className="home-text-container">
         <div className="home-info-container">
-        <p>CONNOR MCKENNA</p>
-        <p>WEB DEVELOPER</p>
+        <p>Connor McKenna</p>
+        <p>Web Developer</p>
         </div>
-        <div className="home-nav-container">
+        <div className="enter-container">
           <Link to="/Portfolio">
-          <a className="enter" alt="enter">EXPLORE</a>
+          <a href className="enter" alt="explore">ENTER</a>
           </Link>
         </div>
       </div>

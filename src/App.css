@@ -1,6 +1,6 @@
 .app {
   min-height: 100vh;
-  background-image: url("./assets/woodangle.jpg");
+  min-width: 100vw;
 }
 
 .main-container {
@@ -9,5 +9,5 @@
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }

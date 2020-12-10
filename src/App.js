@@ -11,22 +11,22 @@ import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 
 function App() {
-  const [listItems, setListItems] = useState("")
-  const [fetchItems, setFetchItems] = useState(false);
+  const [listProjects, setListProjects] = useState("")
+  const [fetchProjects, setFetchProjects] = useState(false);
   
   useEffect(() => {
-    const getListItems = async () => {
-      const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/portfolio-projects`;
+    const listProjects = async () => {
+      const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/projects`;
       const response = await axios.get(airtableURL, {
         headers: {
           Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
         },
       });
-      setListItems(response.data.records);
       console.log(response.data.records)
+      setListProjects(response.data.records);
     };
-    getListItems();
-  }, [fetchItems]);
+    listProjects();
+  }, [fetchProjects]);
 
   return (
     <div className="app">
@@ -36,16 +36,16 @@ function App() {
       <div className="main-container">
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/portfolio/:name">
-            <ProjectDetails listItems={listItems}/>
-          </Route>
           <Route path='/portfolio'>
-            <Portfolio listItems={listItems}/>
+            <Portfolio listProjects={listProjects}/>
+          </Route>
+          <Route path="/portfolio/:name">
+            <ProjectDetails listProjects={listProjects}/>
           </Route>
           <Route path='/contact'>
             <Contact />
           </Route>
+          <Route path="/about" component={About} />
         </Switch>
       </div>
       <div>
