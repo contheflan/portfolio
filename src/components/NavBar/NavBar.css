@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   height: 12vh;
-  background-color: rgba(73, 24, 125, 0.572);
+  background-color: rgba(249, 249, 249, 0.155);
   text-shadow: 5px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -18,7 +18,7 @@
 
 .nav:hover{
   cursor: pointer;
-  color: rgb(220, 152, 16);
+  color: rgb(105, 105, 105);
 }
 
 @media only screen and (max-width: 600px) {
