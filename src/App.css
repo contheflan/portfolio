@@ -1,4 +1,5 @@
 .app {
+  font-family: 'Cinzel', serif;
   min-height: 100vh;
   min-width: 100vw;
   background-image: url("./assets/background-horizontal-dark-wood.jpg");

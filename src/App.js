@@ -11,23 +11,23 @@ import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 
 function App() {
-  const [listProjects, setListProjects] = useState("")
+  const [listProjects, setListProjects] = useState([])
   const [fetchProjects, setFetchProjects] = useState(false);
   
   useEffect(() => {
-    const listProjects = async () => {
+    const getListProjects = async () => {
       const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/projects`;
       const response = await axios.get(airtableURL, {
         headers: {
           Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
         },
       });
-      console.log(response.data.records)
       setListProjects(response.data.records);
     };
-    listProjects();
+    getListProjects(listProjects);
   }, [fetchProjects]);
-
+  
+ 
   return (
     <div className="app">
       <div>
@@ -36,15 +36,17 @@ function App() {
       <div className="main-container">
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path='/portfolio'>
+
+          <Route exact path='/portfolio'>
             <Portfolio listProjects={listProjects}/>
           </Route>
-          <Route path="/portfolio/:name">
+
+          <Route exact path="/portfolio/:name">
             <ProjectDetails listProjects={listProjects}/>
           </Route>
-          <Route path='/contact'>
-            <Contact />
-          </Route>
+
+          <Route path='/contact' component={Contact} />
+
           <Route path="/about" component={About} />
         </Switch>
       </div>

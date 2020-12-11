@@ -1,0 +1,72 @@
+.project-details {
+  width: 100%;
+  height: 100%;
+  min-height: 50vh;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 115px;
+}
+
+.project-name {
+  color: white;
+  font-size: 100px;
+  text-shadow: 2px 2px #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.project-details-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 65%;
+}
+
+.column {
+  width: 100%;
+  padding: 0px 25px 0px 25px;
+}
+
+#project-img {
+  width: 100%;
+  box-shadow: 3px 3px 5px black;
+}
+
+.subtext {
+  color: white;
+  font-size: 36px;
+}
+
+.text {
+  margin-top: 0px;
+  color: white;
+  font-size: 26px;
+}
+
+.details-button-container {
+  width: 317px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  font-size: 28px;
+  height: 40px;
+  background-image: url("../../assets/buttonlight.png");
+}
+
+.details-button {
+  margin: 0 auto;
+}
+
+.details-button:hover {
+  background-image: url("../../assets/buttondark.png");
+}
+
+.code {
+  padding-top: 2px;
+}
+
+.web {
+  font-size: 22px;
+  padding-top: 7px;
+}

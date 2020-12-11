@@ -10,31 +10,34 @@
   text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-.home-text-container {
-  margin-top: 80px;
+.home-info-container {
+  margin-top: 85px;
   padding: 0;
 }
 
-.home-info-container {
-  margin: -20px;
-}
-
-.ham {
-  display: inline;
-  width: 800px;
-}
-
 .enter-container {
-  width: 200px;
-  height: 100px;
+  width: 550px;
+  height:80px;
   margin: 0 auto;
+  margin-top: -90px;
 }
 
 .enter {
-  font-size: 50px;
+  background-image: url("../../assets/exlargebuttonlight.png");
+  background-color: transparent;
+  font-family: 'Cinzel', serif;
+  border: none;
+  width: 550px;
+  height: 80px;
+  font-size: 60px;
   color: rgb(236, 224, 224);
+  margin: 0 auto;
+  padding-top: 8px;
 }
 
 .enter:hover {
+  background-image: url("../../assets/exlargebuttondark.png");
   color: rgb(105, 105, 105);
+  font-size: 57px;
+  padding-top: 11.45px;
 }
