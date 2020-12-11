@@ -27,11 +27,29 @@
 }
 
 .profile-pic {
-  width: 80%;
+  width: 70%;
   background-position: center;
   border: 1px solid white;
 }
 
-.resume {
-  padding-top: 150px;
+.resume-button-container {
+  width: 550px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.resume-button {
+  background-image: url("../../assets/exlargebuttonlight.png");
+  width: 550px;
+  height: 80px;
+  font-size: 60px;
+  margin: 0 auto;
+  padding-top: 6px;
+}
+
+.resume-button:hover {
+  background-image: url("../../assets/exlargebuttondark.png");
+  color: rgb(105, 105, 105);
+  font-size: 57px;
+  padding-top: 9px;
 }

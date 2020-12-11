@@ -18,18 +18,16 @@
   color: rgb(105, 105, 105);
 }
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .navbar {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    height: 45px;
-    z-index: 5;
+    height: 55px;
   }
   
   .nav {
     margin-right: 0px;
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .navend {
@@ -37,4 +35,4 @@
     padding-right: 10px;
   }
 
-} */
+}

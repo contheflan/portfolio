@@ -26,9 +26,9 @@ export default class Contact extends React.Component {
             <label className='contact-label'>EMAIL:</label>
             <input className='input' type="email" name="email" />
               <label className='contact-label'>MESSAGE:</label>
-              <textarea className="input-message" placeholder="Send me a message!" cols="30" rows="5"></textarea>
-            {status === "SUCCESS" ? <p>Thanks for reaching out!</p> : <button className='big-button contact-me'>SUBMIT</button>}
-            {status === "ERROR" && <p>Ooops! There was an error.</p>}
+              <textarea className="input-message" placeholder="Send me a message!" cols="30" rows="5" type="text" name="message"/>
+              {status === "SUCCESS" ? <p>Submitted!</p> : <button className='big-button contact-me'>SUBMIT</button>}
+              {status === "ERROR" && <p>Error Submitting! Contact me at connormckenna2654@gmail.com</p>}
               </form>
           </section>
         </div>

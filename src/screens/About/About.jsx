@@ -1,9 +1,8 @@
 import React from 'react';
 import './About.css';
 import picture from "../../assets/picture.jpg"
-import skeleton from "../../assets/skeleton.gif"
 
-function About(props) {
+function About() {
   return (
     <div className="about-me">
       <div className='about-me-container'>
@@ -13,9 +12,8 @@ function About(props) {
         <section className="about-column">
           <p id='aboutme-text'>I am a Television Broadcast Producer turned Software Engineer. I have a distinct eye for design and I know what works with a successful site. I changed career paths to a more hands-on creative role because I love taking fun ideas and turning them into unique creations. Ask me about my love of the 80's fantasy aesthetic.
           </p>
-
-          <div className='big-button-container resume'>
-            <button className='big-button' rel="noreferrer" target="_blank" href='https://docs.google.com/document/d/18faKWW30olJI3a4_Fj7JeOn5j1KDGRQIgQwUaJfrl2A/edit?usp=sharing'>RESUME</button>
+          <div className='resume-button-container'>
+            <a className='resume-button' rel="noreferrer" target="_blank" href='https://drive.google.com/file/d/1ELqkHVirwjkyI6JMCCtxENl9QHn9eRg_/view?usp=sharing'>RESUME</a>
           </div>
         </section>
       </div>

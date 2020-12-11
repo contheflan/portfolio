@@ -19,7 +19,7 @@
   width: 550px;
   height:80px;
   margin: 0 auto;
-  margin-top: -90px;
+  margin-top: -80px;
 }
 
 .big-button {
@@ -40,4 +40,37 @@
   color: rgb(105, 105, 105);
   font-size: 57px;
   padding-top: 9px;
+}
+
+@media only screen and (max-width: 600px) {
+  .home-container {
+    font-size: 65px;
+  }
+  
+  .home-info-container {
+    margin-top: 60px;
+    padding: 0;
+  }
+  
+  .big-button-container {
+    width: 350px;
+    height: 70px;
+    margin: 0 auto;
+  }
+  
+  .big-button {
+    background-image: url("../../assets/largebuttonlight.png");
+    background-color: transparent;
+    width: 350px;
+    height: 50px;
+    font-size: 35px;
+    padding-top: 6px;
+  }
+  
+  .big-button:hover {
+    background-image: url("../../assets/largebuttondark.png");
+    color: rgb(105, 105, 105);
+    font-size: 57px;
+    padding-top: 9px;
+  }
 }
