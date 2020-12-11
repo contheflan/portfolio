@@ -15,14 +15,14 @@
   padding: 0;
 }
 
-.enter-container {
+.big-button-container {
   width: 550px;
   height:80px;
   margin: 0 auto;
   margin-top: -90px;
 }
 
-.enter {
+.big-button {
   background-image: url("../../assets/exlargebuttonlight.png");
   background-color: transparent;
   font-family: 'Cinzel', serif;
@@ -32,12 +32,12 @@
   font-size: 60px;
   color: rgb(236, 224, 224);
   margin: 0 auto;
-  padding-top: 8px;
+  padding-top: 6px;
 }
 
-.enter:hover {
+.big-button:hover {
   background-image: url("../../assets/exlargebuttondark.png");
   color: rgb(105, 105, 105);
   font-size: 57px;
-  padding-top: 11.45px;
+  padding-top: 9px;
 }

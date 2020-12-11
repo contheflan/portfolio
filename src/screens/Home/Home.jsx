@@ -9,9 +9,9 @@ function Home() {
         <p>Connor McKenna</p>
         <p>Web Developer</p>
         </div>
-        <div className="enter-container">
+        <div className="big-button-container">
           <Link to="/portfolio">
-          <button href className="enter" alt="explore">ENTER</button>
+          <button href className="big-button" alt="explore">ENTER</button>
           </Link>
         </div>
       </div>

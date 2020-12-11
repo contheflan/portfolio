@@ -63,10 +63,12 @@
 }
 
 .code {
-  padding-top: 2px;
+  padding-top: 3px;
+  padding-left: 3px;
 }
 
 .web {
   font-size: 22px;
   padding-top: 7px;
+  padding-left: 6px;
 }
