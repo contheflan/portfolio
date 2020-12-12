@@ -45,30 +45,115 @@
 }
 
 .details-button-container {
-  width: 317px;
   display: flex;
-  justify-content: space-between;
-  margin: 20px auto;
-  font-size: 28px;
-  height: 40px;
-  background-image: url("../../assets/buttonlight.png");
+  width: 317px;
+  margin: 0px auto;
+  height: 42px;
 }
 
 .details-button {
+  font-size: 28px;
+  width: 317px;
+  background-image: url("../../assets/buttonlight.png");
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .details-button:hover {
   background-image: url("../../assets/buttondark.png");
+  color: rgb(105, 105, 105);
 }
 
 .code {
   padding-top: 3px;
-  padding-left: 3px;
 }
 
 .web {
-  font-size: 22px;
-  padding-top: 7px;
-  padding-left: 6px;
+  font-size: 24px;
+  padding-top: 6px;
+}
+
+@media only screen and (max-width: 600px) {
+  .project-details {
+    width: 100%;
+    height: 100%;
+    min-height: 10vh;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  
+  .project-name {
+    color: white;
+    font-size: 45px;
+    text-shadow: 2px 2px #000000;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .project-details-container {
+    height: 100%;
+    display: block;
+    align-items: center;
+    text-align: justify;
+    margin: 0 auto;
+    width: 90%;
+  }
+  
+  .column {
+    width: 100%;
+    padding: 0px;
+  }
+  
+  #project-img {
+    width: 100%;
+    box-shadow: 3px 3px 5px black;
+  }
+  
+  .subtext {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+  }
+  
+  .text {
+    margin-top: 0px;
+    color: white;
+    font-size: 26px;
+  }
+  
+  .details-button-container {
+    display: flex;
+    width: 317px;
+    margin: 0px auto;
+    height: 42px;
+  }
+
+  .language {
+    text-align: center;
+  }
+  
+  .details-button {
+    font-size: 28px;
+    width: 317px;
+    background-image: url("../../assets/buttonlight.png");
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .details-button:hover {
+    background-image: url("../../assets/buttondark.png");
+    color: rgb(105, 105, 105);
+  }
+  
+  .code {
+    padding-top: 3px;
+  }
+  
+  .web {
+    font-size: 24px;
+    padding-top: 6px;
+  }
 }

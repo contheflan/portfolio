@@ -3,11 +3,12 @@ import './ProjectDetails.css';
 import { useParams } from 'react-router-dom';
 
 function ProjectDetails(props) {
+  let j = 1;
   const params = useParams()
   const detail = props.listProjects.find((r) => r.fields.name === params.name)
   return (
     <div>
-      <div className='project-details'>
+      <div key={j++} className='project-details'>
         <h2 className='project-name'>{detail && detail.fields.name}</h2>
         <div className='project-details-container'>
           <section className="column column-a">
@@ -16,9 +17,9 @@ function ProjectDetails(props) {
           <section className="column column-b">
             <p className='text'>{detail && detail.fields.description}</p>
             <h3 className='subtext'>BUILT WITH</h3>
-            <p className='text'>{detail && detail.fields.languages}</p>
+            <p className='text language'>{detail && detail.fields.languages}</p>
             <div className='details-button-container'>
-            <a className='details-button code' rel="noreferrer" target="_blank" href={detail && detail.fields.github}>CODE </a>
+            <a className='details-button code' rel="noreferrer" target="_blank" href={detail && detail.fields.github}>CODE</a>
             <a className='details-button web' rel="noreferrer" target="_blank" href={detail && detail.fields.website}>WEBSITE</a>
             </div>
           </section>

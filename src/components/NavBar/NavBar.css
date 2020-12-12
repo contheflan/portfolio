@@ -20,19 +20,15 @@
 
 @media only screen and (max-width: 600px) {
   .navbar {
-    width: 100%;
-    display: flex;
+    justify-content: inherit;
     height: 55px;
+    background-color: rgba(0, 0, 0, 0.661);
   }
   
   .nav {
-    margin-right: 0px;
-    font-size: 16px;
-  }
-
-  .navend {
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-right: 6px;
+    margin-left: 6px;
+    font-size: 18px;
   }
 
 }

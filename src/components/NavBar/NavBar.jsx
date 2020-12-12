@@ -5,7 +5,7 @@ import './NavBar.css';
 function NavBar(props) {
   return (
     <div className="navbar">
-      <Link className="nav navend" to="/">
+      <Link className="nav" to="/">
         <p>HOME</p>
       </Link>
       <Link className="nav" to="/portfolio">
@@ -14,7 +14,7 @@ function NavBar(props) {
       <Link className="nav" to="/about">
         <p>ABOUT</p>
       </Link>
-      <Link className="nav navend" to="/contact">
+      <Link className="nav" to="/contact">
         <p>CONTACT</p>
       </Link>
     </div>

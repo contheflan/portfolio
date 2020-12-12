@@ -15,7 +15,7 @@ export default class Contact extends React.Component {
     return (
       <div>
         <div className='contact'>
-          <h2 className='project-name'>CONTACT</h2>
+          <h2 className='contact-title'>CONTACT</h2>
           <section className='contact-section'>
             <form
             className='contact-form'
