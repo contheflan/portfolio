@@ -1,6 +1,5 @@
 .contact {
   width: 100%;
-  height: 100%;
   justify-content: center;
   flex-direction: column;
   padding-top: 90px;
@@ -8,7 +7,7 @@
 }
 
 .contact-title {
-  margin-bottom: 50px;
+  margin: 80px 0px 52px 0px;
   color: white;
   font-size: 100px;
   text-shadow: 2px 2px #000000;
@@ -23,10 +22,9 @@
 
 .contact-form {
   padding: 0px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  width: 550px;
+  width: 555px;
 }
 
 .contact-label {
@@ -37,7 +35,7 @@
 
 .input {
   font-family: 'Cinzel', serif;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 20px;
 }
 
@@ -47,7 +45,7 @@
 }
 
 .contact-me {
-  margin-top: 55px;
+  margin-top: 60px;
   margin-bottom: 0px;
 }
 
