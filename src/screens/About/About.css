@@ -1,9 +1,9 @@
 .about-me {
   width: 100%;
-  min-height: 60vh;
+  min-height: 50vh;
   justify-content: center;
   flex-direction: column;
-  padding-top: 180px;
+  padding-top: 140px;
 }
 
 .about-me-container {
@@ -27,7 +27,7 @@
 }
 
 .profile-pic {
-  width: 70%;
+  width: 60%;
   background-position: center;
   border: 1px solid white;
 }
@@ -52,6 +52,64 @@
   background-image: url("../../assets/exlargebuttondark.png");
   color: rgb(105, 105, 105);
   padding-top: 5px;
+}
+
+@media only screen and (max-width: 1024px){
+  .about-me {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 185px;
+  }
+  
+  .about-me-container {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about-column {
+    width: 100%
+  }
+  
+  .about-column-a {
+    text-align: center;
+  }
+  
+  #aboutme-text {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 28px;
+    text-align: justify;
+  }
+  
+  .profile-pic {
+    width: 50%;
+    background-position: center;
+    border: 1px solid white;
+  }
+  
+  .resume-button-container {
+    width: 600px;
+    height: 80px;
+    margin: 66px 0px 0px 245px;
+  }
+  
+  .resume-button {
+    background-image: url("../../assets/exlargebuttonlight.png");
+    width: 550px;
+    font-size: 60px;
+    margin: 0 auto;
+    padding-top: 6px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  
+  .resume-button:hover {
+    background-image: url("../../assets/exlargebuttondark.png");
+    color: rgb(105, 105, 105);
+    padding-top: 5px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -111,5 +169,30 @@
     color: rgb(105, 105, 105);
     font-size: 25px;
     padding-top: 4px;
+  }
+}
+
+@media only screen and (max-width: 280px){
+  #aboutme-text {
+    font-size: 14px;
+  }
+  .profile-pic {
+    width: 70%;
+  }
+  
+  .resume-button-container {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    margin: 20px 0px 0px 60px;
+  }
+  
+  .resume-button {
+    width: 500px;
+    font-size: 25px;
+    margin: 0 auto;
+    padding-top: 4px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }

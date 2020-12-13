@@ -1,15 +1,14 @@
 .contact {
   width: 100%;
-  min-height: 60vh;
   height: 100%;
   justify-content: center;
   flex-direction: column;
-  padding-top: 130px;
+  padding-top: 90px;
   margin: 0 auto;
-  padding-bottom: 0px;
 }
 
 .contact-title {
+  margin-bottom: 50px;
   color: white;
   font-size: 100px;
   text-shadow: 2px 2px #000000;
@@ -48,14 +47,34 @@
 }
 
 .contact-me {
-  margin-top: 45px;
+  margin-top: 55px;
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-title {
+    font-size: 100px;
+    color: white;
+    text-shadow: 2px 2px #000000;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .contact {
+    width: 100%;
+    min-height: 50vh;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 150px;
+    margin: 0 auto;
+    padding-bottom: 0px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .contact-title {
     font-size: 65px;
-    color: white;
-    text-shadow: 2px 2px #000000;
     text-transform: uppercase;
     text-align: center;
   }
@@ -93,8 +112,53 @@
   .input, .input-message {
     font-size: 18px;
   }
-  
+
   .contact-me {
     margin-top: 45px;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .contact-title {
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .contact {
+    width: 100%;
+    min-height: 50vh;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 35px;
+    margin: 0 auto;
+    padding-bottom: 0px;
+  }
+  
+  .contact-section {
+    margin: 0 auto;
+    width: 250px;
+  }
+  
+  .contact-form {
+    padding: 0px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+  }
+  
+  .contact-label {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .input, .input-message {
+    font-size: 18px;
+  }
+
+  .contact-me {
+    margin-top: 35px;
   }
 }
