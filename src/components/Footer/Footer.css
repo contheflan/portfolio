@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: flex-end;
   width: 100%;
-  bottom: 0;
+  /* bottom: 0; */
 }
 
 .footer-icon-container {
@@ -17,7 +17,7 @@
   padding: 15px;
 }
 
-@media only screen and (max-width: 280px){
+@media only screen and (max-width: 320px){
   .footer {
     margin-top: 40px;
     justify-content: center;
